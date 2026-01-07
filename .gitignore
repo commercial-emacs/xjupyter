@@ -1,0 +1,10 @@
+build
+venvs
+logs
+shared
+bin
+*.pyc
+*autoloads.el
+xjupyter.egg-info
+.cache
+images
