@@ -1,0 +1,5 @@
+# xjupyter
+
+```console
+make install
+```

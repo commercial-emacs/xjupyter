@@ -1,0 +1,32 @@
+[tool.pyright]
+include = ["src"]
+exclude = [
+  "**/node_modules",
+  "**/__pycache__",
+]
+venvPath = "venvs"
+venv = "xjupyter"
+
+
+[project]
+name = "xjupyter"
+version = "0.1.0"
+dependencies = [
+  "typing_extensions",
+  "jupyter_client",
+  "ipykernel",
+]
+authors = [
+  {name = "dickmao", email = "richard@commandlinesystems.com"},
+  {name = "Marcel Rieger", email = "github.riga@icloud.com"},
+]
+
+
+[project.optional-dependencies]
+test = [
+  "pytest >=6.0",
+  "pylint",
+]
+
+[project.scripts]
+app = "xjupyter.__main__:main"
